@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class BloodCompatibility {
+    let selectedType: String
+    let donate: String
+    let receive: String
+    
+    init(selectedType: String, donate: String, receive: String) {
+        self.selectedType = selectedType
+        self.donate = donate
+        self.receive = receive
+    }
+}

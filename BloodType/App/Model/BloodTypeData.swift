@@ -1,3 +1,12 @@
+//
+//  BloodTypeData.swift
+//  BloodType
+//
+//  Created by Diggo Silva on 23/05/25.
+//
+
+import Foundation
+
 class BloodTypeData {
     static let all: [BloodCompatibility] = [
         BloodCompatibility(selectedType: "O+", donate: "Doa para: O+, A+, B+, AB+", receive: "Recebe de: O+, O-"),
