@@ -40,8 +40,3 @@ extension BloodTypeViewController: BloodTypeViewDelegate {
         print("Clicou no botão Limpar Resultado")
     }
 }
-
-
-#Preview {
-    BloodTypeViewController()
-}
