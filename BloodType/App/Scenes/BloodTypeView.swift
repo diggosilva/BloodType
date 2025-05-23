@@ -12,7 +12,7 @@ protocol BloodTypeViewDelegate: AnyObject {
     func didTapClearResult()
 }
 
-class BloodyTypeView: UIView {
+class BloodTypeView: UIView {
     
     var donateLabel = PaddingLabel()
     var receiveLabel = PaddingLabel()
@@ -59,6 +59,7 @@ class BloodyTypeView: UIView {
         
         addSubview(stackViewLabels)
         addSubview(stackView)
+        backgroundColor = .systemBackground
     }
     
     private func setConstraints() {
