@@ -10,6 +10,7 @@ import UIKit
 class BloodTypeViewController: UIViewController {
     
     let bloodTypeView = BloodTypeView()
+    let viewModel = BloodTypeViewModel()
     
     override func loadView() {
         super.loadView()
@@ -33,34 +34,19 @@ class BloodTypeViewController: UIViewController {
 
 extension BloodTypeViewController: BloodTypeViewDelegate {
     func didChangeBloodType() {
-        print("Escolheu um tipo de sangue")
+        let index = bloodTypeView.bloodSegmentedControl.selectedSegmentIndex
+        viewModel.selectedType(at: index)
+        updateLabels()
     }
     
     func didTapClearResult() {
-        print("Clicou no botão Limpar Resultado")
-    }
-}
-
-class BloodTypeViewModel {
-    private let data = BloodTypeData.all
-    private var selectedType: BloodCompatibility?
-    
-    func selectedType(at index: Int) {
-        guard index < data.count else { return }
-        selectedType = data[index]
+        viewModel.clearResults()
+        updateLabels()
+        bloodTypeView.bloodSegmentedControl.selectedSegmentIndex = UISegmentedControl.noSegment
     }
     
-    func donateText() -> String {
-        guard let selectedType else { return "Doa para: " }
-        return selectedType.donate
-    }
-    
-    func receiveText() -> String {
-        guard let selectedType else { return "Recebe de: " }
-        return selectedType.receive
-    }
-    
-    func clearResults() {
-        selectedType = nil
+    private func updateLabels() {
+        bloodTypeView.donateLabel.text = viewModel.donateText()
+        bloodTypeView.receiveLabel.text = viewModel.receiveText()
     }
 }
