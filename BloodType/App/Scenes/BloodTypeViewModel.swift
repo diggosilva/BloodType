@@ -7,7 +7,14 @@
 
 import Foundation
 
-class BloodTypeViewModel {
+protocol BloodTypeViewModelProtocol {
+    func selectedType(at index: Int)
+    func donateText() -> String
+    func receiveText() -> String
+    func clearResults()
+}
+
+class BloodTypeViewModel: BloodTypeViewModelProtocol {
     
     private let data = BloodTypeData.all
     private var selectedType: BloodCompatibility?

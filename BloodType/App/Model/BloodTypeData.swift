@@ -8,6 +8,7 @@
 import Foundation
 
 class BloodTypeData {
+    
     static let all: [BloodCompatibility] = [
         BloodCompatibility(selectedType: "O+", donate: "Doa para: O+, A+, B+, AB+", receive: "Recebe de: O+, O-"),
         BloodCompatibility(selectedType: "O-", donate: "Doa para: Todos os tipos\n(O+, O-, A+, A-, B+, B-, AB+, AB-)\n(Doador universal)", receive: "Recebe de: O- Apenas"),
