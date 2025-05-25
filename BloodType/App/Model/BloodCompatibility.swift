@@ -8,6 +8,7 @@
 import Foundation
 
 class BloodCompatibility {
+    
     let selectedType: String
     let donate: String
     let receive: String
