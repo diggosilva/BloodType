@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		924AD0712DE5DE82009B0BC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9234D6682DDF7E9D00436C85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9234D66F2DDF7E9D00436C85;
+			remoteInfo = BloodType;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9234D6702DDF7E9D00436C85 /* BloodType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodType.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		924AD06D2DE5DE82009B0BC2 /* BloodTypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodTypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = BloodType;
 			sourceTree = "<group>";
 		};
+		924AD06E2DE5DE82009B0BC2 /* BloodTypeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BloodTypeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9234D66D2DDF7E9D00436C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924AD06A2DE5DE82009B0BC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9234D6722DDF7E9D00436C85 /* BloodType */,
+				924AD06E2DE5DE82009B0BC2 /* BloodTypeTests */,
 				9234D6712DDF7E9D00436C85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9234D6702DDF7E9D00436C85 /* BloodType.app */,
+				924AD06D2DE5DE82009B0BC2 /* BloodTypeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = 9234D6702DDF7E9D00436C85 /* BloodType.app */;
 			productType = "com.apple.product-type.application";
 		};
+		924AD06C2DE5DE82009B0BC2 /* BloodTypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 924AD0752DE5DE82009B0BC2 /* Build configuration list for PBXNativeTarget "BloodTypeTests" */;
+			buildPhases = (
+				924AD0692DE5DE82009B0BC2 /* Sources */,
+				924AD06A2DE5DE82009B0BC2 /* Frameworks */,
+				924AD06B2DE5DE82009B0BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				924AD0722DE5DE82009B0BC2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				924AD06E2DE5DE82009B0BC2 /* BloodTypeTests */,
+			);
+			name = BloodTypeTests;
+			packageProductDependencies = (
+			);
+			productName = BloodTypeTests;
+			productReference = 924AD06D2DE5DE82009B0BC2 /* BloodTypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					9234D66F2DDF7E9D00436C85 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					924AD06C2DE5DE82009B0BC2 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 9234D66F2DDF7E9D00436C85;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				9234D66F2DDF7E9D00436C85 /* BloodType */,
+				924AD06C2DE5DE82009B0BC2 /* BloodTypeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9234D66E2DDF7E9D00436C85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924AD06B2DE5DE82009B0BC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		924AD0692DE5DE82009B0BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		924AD0722DE5DE82009B0BC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9234D66F2DDF7E9D00436C85 /* BloodType */;
+			targetProxy = 924AD0712DE5DE82009B0BC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9234D6842DDF7E9E00436C85 /* Debug */ = {
@@ -313,6 +388,42 @@
 			};
 			name = Release;
 		};
+		924AD0732DE5DE82009B0BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57HYQW6DAG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diggosilva.BloodTypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BloodType.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BloodType";
+			};
+			name = Debug;
+		};
+		924AD0742DE5DE82009B0BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57HYQW6DAG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diggosilva.BloodTypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BloodType.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BloodType";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +441,15 @@
 			buildConfigurations = (
 				9234D6842DDF7E9E00436C85 /* Debug */,
 				9234D6852DDF7E9E00436C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		924AD0752DE5DE82009B0BC2 /* Build configuration list for PBXNativeTarget "BloodTypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924AD0732DE5DE82009B0BC2 /* Debug */,
+				924AD0742DE5DE82009B0BC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
